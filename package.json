@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "install": "node -e 'console.log(process.env.PATH)'; which node-gyp; node-gyp list; node-gyp --version; node-gyp rebuild"
+    "install": "echo PATH; node -e 'console.log(process.env.PATH)'; echo which node-gyp; which node-gyp; echo node-gyp list; node-gyp list; echo node-gyp --version; node-gyp --version; echo node-gyp rebuild; node-gyp rebuild"
   },
   "repository": {
     "type": "git",
