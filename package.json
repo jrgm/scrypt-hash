@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "install": "echo PATH; node -e 'console.log(process.env.PATH)'; echo which node-gyp; which node-gyp; echo node-gyp list; node-gyp list; echo node-gyp --version; node-gyp --version; echo node-gyp rebuild; node-gyp rebuild"
+    "install": "source /opt/rh/python27/enable; source /opt/rh/devtoolset-3/enable; echo PATH; node -e 'console.log(process.env.PATH)'; echo which node-gyp; which node-gyp; echo node-gyp list; node-gyp list; echo node-gyp --version; node-gyp --version; echo node-gyp rebuild; node-gyp rebuild"
   },
   "repository": {
     "type": "git",
